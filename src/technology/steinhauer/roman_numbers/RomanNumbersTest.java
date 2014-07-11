@@ -97,4 +97,19 @@ public class RomanNumbersTest {
         fail("0 isn't part of roman numbers");
 
     }
+
+    @Test
+    public void checkHighestPossibleNumber() {
+        int latinNumber = 3999;
+        String expectedResult = "MMMCMXCIX";
+
+        String actualResult = RomanNumbers.convertFromInt(latinNumber);
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test (expected = IllegalArgumentException.class)
+    public void checkUpperBound() {
+        int latinNumber = 4000;
+        String actualResult = RomanNumbers.convertFromInt(latinNumber);
+    }
 }
