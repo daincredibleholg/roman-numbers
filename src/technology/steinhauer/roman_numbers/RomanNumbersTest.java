@@ -4,7 +4,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Created by hsteinhauer on 09.07.14.
+ * Unit tests for the Roman Numbers converter
  */
 public class RomanNumbersTest {
 
